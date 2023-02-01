@@ -1,5 +1,4 @@
 import React from "react";
-
 import CompletedIllustration from "assets/images/completed.jpg";
 
 export default function Completed() {

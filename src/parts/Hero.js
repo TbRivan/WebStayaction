@@ -1,7 +1,10 @@
 import React from "react";
+
 import ImageHero from "assets/images/img-hero.jpg";
 import ImageHero_ from "assets/images/img-hero-frame.jpg";
+
 import Button from "elements/Button";
+
 import formatNumber from "utils/formatNumber";
 
 export default function Hero(props) {
@@ -15,12 +18,15 @@ export default function Hero(props) {
   return (
     <section className="container pt-4">
       <div className="row align-items-center">
-        <div className="col-auto pr-4" style={{ width: 530 }}>
-          <h1 className="h2 font-weight-bold line-height-1 mb-3">
+        <div className="col-auto pr-5" style={{ width: 530 }}>
+          <h1 className="font-weight-bold line-height-1 mb-3">
             Forget Busy Work, <br />
             Start Next Vacation
           </h1>
-          <p className="mb-4 font-weight-light text-gray-500 w-75">
+          <p
+            className="mb-4 font-weight-light text-gray-500 w-75"
+            style={{ lineHeight: "170%" }}
+          >
             We provide what you need to enjoy your holiday with family. Time to
             make another memorable moments.
           </p>
@@ -38,13 +44,13 @@ export default function Hero(props) {
               <img
                 width="36"
                 height="36"
-                src="/images/icon-traveler.svg"
-                alt={`${props.data.travelers} Travelers`}
+                src={`${process.env.PUBLIC_URL}/images/icon-traveler.svg`}
+                alt={`${props.data.traveler} Travelers`}
               />
               <h6 className="mt-3">
-                {formatNumber(props.data.travelers)}{" "}
+                {formatNumber(props.data.traveler)}{" "}
                 <span className="text-gray-500 font-weight-light">
-                  Travelers
+                  travelers
                 </span>
               </h6>
             </div>
@@ -52,13 +58,13 @@ export default function Hero(props) {
               <img
                 width="36"
                 height="36"
-                src="/images/icon-treasure.svg"
-                alt={`${props.data.treasures} Treasure`}
+                src={`${process.env.PUBLIC_URL}/images/icon-treasure.svg`}
+                alt={`${props.data.treasure} Treasures`}
               />
               <h6 className="mt-3">
-                {formatNumber(props.data.treasures)}{" "}
+                {formatNumber(props.data.treasure)}{" "}
                 <span className="text-gray-500 font-weight-light">
-                  Treasure
+                  treasures
                 </span>
               </h6>
             </div>
@@ -66,12 +72,12 @@ export default function Hero(props) {
               <img
                 width="36"
                 height="36"
-                src="/images/icon-cities.svg"
+                src={`${process.env.PUBLIC_URL}/images/icon-cities.svg`}
                 alt={`${props.data.cities} Cities`}
               />
               <h6 className="mt-3">
                 {formatNumber(props.data.cities)}{" "}
-                <span className="text-gray-500 font-weight-light">Cities</span>
+                <span className="text-gray-500 font-weight-light">cities</span>
               </h6>
             </div>
           </div>
