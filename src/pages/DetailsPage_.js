@@ -18,7 +18,7 @@ function DetailsPage() {
   const { id } = useParams();
   const dispatch = useDispatch();
   const breadcrumb = [
-    { pageTitle: "Home", pageHref: "" },
+    { pageTitle: "Home", pageHref: "/" },
     { pageTitle: "House Details", pageHref: "" },
   ];
 
@@ -29,13 +29,13 @@ function DetailsPage() {
         document.title = `Staycation | ${response.title}`;
       }
     },
-    [dispatch]
+    [dispatch, page]
   );
 
   useEffect(() => {
     window.scrollTo(0, 0);
     fnLoadPage(id);
-  }, [id]);
+  }, [id, fnLoadPage]);
 
   if (!page[id]) return null;
 
