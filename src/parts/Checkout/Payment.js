@@ -15,7 +15,10 @@ export default function Payment(props) {
   return (
     <div className="container" style={{ marginBottom: 30 }}>
       <div className="row justify-content-center align-items-center">
-        <div className="col-5 border-right py-5" style={{ paddingRight: 80 }}>
+        <div
+          className="col-12 col-lg-5 border-md-right py-md-5 px-5 mb-5 mb-md-0"
+          style={{ paddingRight: 80 }}
+        >
           <p className="mb-4">Transfer Pembayaran:</p>
           <p>Tax: {tax}%</p>
           <p>Sub total: ${subTotal} USD</p>
@@ -28,7 +31,7 @@ export default function Payment(props) {
               <dl>
                 <dd>Bank Central Asia</dd>
                 <dd>2208 1996</dd>
-                <dd>BuildWith Angga</dd>
+                <dd>Tb Rivan</dd>
               </dl>
             </div>
           </div>
@@ -41,12 +44,15 @@ export default function Payment(props) {
               <dl>
                 <dd>Bank Mandiri</dd>
                 <dd>2208 1996</dd>
-                <dd>BuildWith Angga</dd>
+                <dd>Tb Rivan</dd>
               </dl>
             </div>
           </div>
         </div>
-        <div className="col-5 py-5" style={{ paddingLeft: 80 }}>
+        <div
+          className="col-12 col-md-5 py-md-5 px-5"
+          style={{ paddingLeft: 80 }}
+        >
           <label htmlFor="proofPayment">Upload Bukti Transfer</label>
           <InputFile
             accept="image/*"

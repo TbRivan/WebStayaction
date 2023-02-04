@@ -5,7 +5,7 @@ export default function Completed() {
   return (
     <div className="container" style={{ marginBottom: 30 }}>
       <div className="row justify-content-center text-center">
-        <div className="col-4">
+        <div className="col-10 col-md-4">
           <img
             src={CompletedIllustration}
             className="img-fluid"

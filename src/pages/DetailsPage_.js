@@ -47,10 +47,10 @@ function DetailsPage() {
 
       <section className="container">
         <div className="row">
-          <div className="col-7 pr-5">
+          <div className="col-12 col-md-7 pr-0 pr-md-5">
             <PageDetailDescription data={page[id]} />
           </div>
-          <div className="col-5">
+          <div className="col-12 col-md-5">
             <BookingForm />
           </div>
         </div>

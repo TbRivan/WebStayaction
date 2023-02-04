@@ -17,14 +17,14 @@ export default function Hero(props) {
 
   return (
     <section className="container pt-4">
-      <div className="row align-items-center">
-        <div className="col-auto pr-5" style={{ width: 530 }}>
+      <div className="row align-items-center text-center text-md-left">
+        <div className="col-auto pr-lg-5 mb-5 mb-md-0" style={{ width: 530 }}>
           <h1 className="font-weight-bold line-height-1 mb-3">
             Forget Busy Work, <br />
             Start Next Vacation
           </h1>
           <p
-            className="mb-4 font-weight-light text-gray-500 w-75"
+            className="mb-4 font-weight-light text-gray-500 w-0 w-md-75"
             style={{ lineHeight: "170%" }}
           >
             We provide what you need to enjoy your holiday with family. Time to
@@ -39,8 +39,8 @@ export default function Hero(props) {
             Show Me Now
           </Button>
 
-          <div className="row" style={{ marginTop: 80 }}>
-            <div className="col-auto" style={{ marginRight: 35 }}>
+          <div className="row justify-content-center justify-content-md-start mt-5">
+            <div className="col-auto mr-lg-5">
               <img
                 width="36"
                 height="36"
@@ -54,7 +54,7 @@ export default function Hero(props) {
                 </span>
               </h6>
             </div>
-            <div className="col-auto" style={{ marginRight: 35 }}>
+            <div className="col-auto mr-lg-5">
               <img
                 width="36"
                 height="36"
@@ -83,19 +83,19 @@ export default function Hero(props) {
           </div>
         </div>
 
-        <div className="col-6 pl-5">
-          <div style={{ width: 520, height: 410 }}>
+        <div className="col-12 col-md-6 pl-lg-5">
+          <div classname="hero-image-placeholder">
             <img
               src={ImageHero}
               alt="Room with couches"
-              className="img-fluid position-absolute"
-              style={{ margin: "-30px 0 0 -30px", zIndex: 1 }}
+              className="img-fluid image-hero position-relative"
+              style={{ zIndex: 2 }}
             />
             <img
               src={ImageHero_}
               alt="Room with couches frame"
-              className="img-fluid position-absolute"
-              style={{ margin: "0 -15px -15px 0" }}
+              className="img-fluid frame-hero position-relative"
+              style={{ margin: "-400px 0 0 15px" }}
             />
           </div>
         </div>

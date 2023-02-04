@@ -6,10 +6,10 @@ export default function NotFound() {
   return (
     <div className="container">
       <div
-        className="row aling-items-center justify-content-center text-center"
+        className="row align-items-center justify-content-center text-center"
         style={{ height: "100vh" }}
       >
-        <div className="col-4">
+        <div className="col-10 col-md-4">
           Are you Lost?
           <p className="pt-4">
             Some page are still in development, maybe you can go back if you
