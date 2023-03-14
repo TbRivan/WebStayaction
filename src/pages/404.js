@@ -22,7 +22,7 @@ export default function NotFound() {
               onClick={() => window.history.back()}
               isLight
             >
-              Yes, Bring me to safe place pelase
+              Yes, Bring me to safe place please
             </Button>
           </div>
         </div>
