@@ -10,7 +10,7 @@ export default function NotFound() {
         style={{ height: "100vh" }}
       >
         <div className="col-10 col-md-4">
-          Are you Lost?
+          You Are Lost!
           <p className="pt-4">
             Some page are still in development, maybe you can go back if you
             want
